@@ -1,0 +1,50 @@
+.header {
+	background: var(--bg-color);
+	padding: 18px 0;
+	box-shadow: var(--box-shadow);
+	position: relative;
+	z-index: 3;
+
+
+	.cols{
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.logo{
+		color: var(--dark-color);
+		font-size: 38px;
+		font-weight: 700;
+
+		span{
+			color: var(--main-color);
+		}
+	}
+
+	&__phone{
+		display: inline-flex;
+		align-items: center;
+		font-size: 20px;
+		font-weight: 500;
+		font-family: var(--font-second);
+		
+
+		a{
+			color: inherit;
+		}
+
+		i{
+			margin-right: 8px;
+		}
+	}
+}
+
+@media (max-width: 1199px){
+	.header{
+
+		&__phone{
+			font-size: 18px;
+		}
+	}
+}

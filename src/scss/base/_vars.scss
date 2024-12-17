@@ -1,0 +1,27 @@
+:root{
+	--container-width: 1400px;
+	--container-padding: 15px;
+
+	--font-main: "Nunito Sans", sans-serif;
+	--font-second: "Rubik", sans-serif;
+	--font-third: 'Cormorant Garamond', serif;
+
+	--page-bg: #fff;
+	--text-color: #232323;
+	--main-color: #ff4b57;
+	--second-color: #f12d3a;
+	--dark-color: #212437;
+	--border-radius: 12px;
+	--bg-color: #f7f2ff;
+
+	--box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.16);;
+
+    --laptop-size: 1200px;
+	--tablet-size: 959px;
+	--mobile-size: 767px;
+}
+
+.dark{
+    --page-bg: #252526;
+    --text-color: #fff;
+}

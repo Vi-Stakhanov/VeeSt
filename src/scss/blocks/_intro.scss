@@ -1,0 +1,287 @@
+.intro{
+	padding: 120px 0;
+	position: relative;
+	z-index: 2;
+
+	.cols{
+		flex-wrap: nowrap;
+		align-items: center;
+	}
+
+	.col{
+		
+		&:nth-child(2){
+			flex-grow: 1;
+		}
+	}
+
+	.title{
+		margin-bottom: 10px;
+		color: var(--text-color);
+		font-size: 78px;
+		font-weight: 700;
+		line-height: 1.1;
+
+	}
+
+	p{
+		margin-bottom: 55px;
+		font-size: 20px;
+		color: #7f7f7f;
+		line-height: 1.5;
+
+	}
+
+	&__btn{
+		width: 100%;
+		font-size: 22px;
+		max-width: 280px;
+
+		i{
+			margin-left: 12px;
+		}
+	}
+
+	.pic-wrap{
+		width: 480px;
+		height: 480px;
+		margin-left: auto;
+		position: relative;
+
+		&:before{
+			content: "";
+			width: 80px;
+			height: 80px;
+			display: block;
+			background: var(--main-color);
+			border-radius: 100%;
+			position: absolute;
+			top: 0px;
+			right: 23px;
+			z-index: 1;
+			animation-name: anim-1;        
+		    animation-duration: 4s;
+		    animation-timing-function: linear;
+		    animation-fill-mode: forwards;
+		    animation-iteration-count: infinite;
+		}		
+
+		&:after{
+			content: "";
+			width: 120px;
+			height: 120px;
+			display: block;
+			background: var(--main-color);
+			border-radius: 100%;
+			position: absolute;
+			bottom: -47px;
+			right: -120px;
+			z-index: 1;
+			animation-name: anim-2;        
+		    animation-duration: 8s;
+		    animation-timing-function: linear;
+		    animation-fill-mode: forwards;
+		    animation-iteration-count: infinite;
+		}		
+
+		.circle{
+			width: 70px;
+			height: 70px;
+			display: block;
+			background: var(--dark-color);
+			border-radius: 100%;
+			position: absolute;
+			bottom: 14px;
+			left: -104px;
+			z-index: 1;
+			animation-name: anim-3;        
+		    animation-duration: 6s;
+		    animation-timing-function: linear;
+		    animation-fill-mode: forwards;
+		    animation-iteration-count: infinite;
+		}
+
+		
+	}
+
+	.pic{
+		width: 480px;
+		height: 480px;
+		background: var(--dark-color);
+		border-radius: 100%;
+		margin-left: auto;
+		position: relative;
+		z-index: 3;
+		overflow: hidden;
+
+		img{
+			width: 463px;
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: -24px;
+			filter: grayscale(100%);
+		}
+	}
+}
+
+@keyframes anim-1{
+    0%{    
+        width: 80px;
+        height: 80px;
+    }
+    50%{
+        width:  60px;
+        height: 60px;
+        
+    }
+    100%{
+        width:  80px;
+        height: 80px;
+        
+    }
+}
+
+@keyframes anim-2{
+    0%{    
+        width: 120px;
+        height: 120px;
+    }
+    50%{
+        width:  210px;
+        height: 210px;
+        
+    }
+    100%{
+        width:  120px;
+        height: 120px;
+        
+    }
+}
+
+@keyframes anim-3{
+    0%{    
+        width: 70px;
+        height: 70px;
+    }
+    50%{
+        width:  100px;
+        height: 100px;
+        
+    }
+    100%{
+        width:  70px;
+        height: 70px;
+        
+    }
+}
+
+@media (max-width: 1199px){
+
+
+	.intro{
+		padding: 100px 0;
+		.cols{
+			flex-wrap: wrap;
+		}
+
+		.col{
+			width: 100%;
+		}
+
+		.pic-wrap{
+			margin: 0 auto;
+			padding-top: 45px;
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.intro{
+		padding: 80px 0 140px;
+
+		.title{
+			font-size: 58px;
+		}
+
+		.pic-wrap{
+			width: 300px;
+			height: 300px;
+
+			&:before{
+				width: 70px;
+				height: 70px;
+				top: 15px;
+			}
+
+			&:after{
+				width: 90px;
+				height: 90px;
+				right: -57px;
+			}
+
+			.circle{
+				width: 60px;
+				height: 60px;
+				bottom: -71px;
+				left: -20px;
+			}
+		}
+
+		.pic{
+			width: 300px;
+			height: 300px;
+		}
+	}
+
+	@keyframes anim-1{
+	    0%{    
+	        width: 70px;
+	        height: 70px;
+	    }
+	    50%{
+	        width:  60px;
+	        height: 60px;
+	        
+	    }
+	    100%{
+	        width:  70px;
+	        height: 70px;
+	        
+	    }
+	}
+
+	@keyframes anim-2{
+	    0%{    
+	        width: 90px;
+	        height: 90px;
+	    }
+	    50%{
+	        width:  120px;
+	        height: 120px;
+	        
+	    }
+	    100%{
+	        width:  90px;
+	        height: 90px;
+	        
+	    }
+	}
+
+	@keyframes anim-3{
+	    0%{    
+	        width: 60px;
+	        height: 60px;
+	    }
+	    50%{
+	        width:  80px;
+	        height: 80px;
+	        
+	    }
+	    100%{
+	        width:  60px;
+	        height: 60px;
+	        
+	    }
+	}
+}
